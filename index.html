@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Game of Thrones Guess Who? Game</title>
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+       <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet">
+       <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div>
+          <h1>Guess Who Takes the Throne </h1>
+        </div>
+        <div id="gameboard">
+          <div>character 1</div>
+          <div>character 2</div>
+          <div>character 3</div>
+          <div>character 4</div>
+          <div>character 5</div>
+          <div>character 6</div>
+          <div>character 7</div>
+          <div>character 8</div>
+          <div>character 9</div>
+          <div>character 10</div>
+          <div>character 11</div>
+          <div>character 12</div>
+          <div>character 13</div>
+          <div>character 14</div>
+          <div>character 15</div>
+          <div>character 16</div>
+          <div>character 17</div>
+          <div>character 18</div>
+          <div>character 19</div>
+          <div>character 20</div>
+          <div>character 21</div>
+          <div>character 22</div>
+          <div>character 23</div>
+          <div>character 24</div>
+        </div>
+        <div class="question-buttons">
+          <div>
+             <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">House
+              <ul class="dropdown-menu">
+                <li> <a class="House" href="#">Stark of Winterfell</a></li>
+                <li><a class="House" href="#">Lannister of Casterly Rock</a></li>
+                <li><a class="House" href="#">Targaryen of King's Landing</a></li>
+                <li><a class="House" href="#">Greyjoy of Pyke</a></li>
+                <li><a class="House" href="#">Tully of Riverrun</a></li>
+                <li><a class="House" href="#">Baratheon of Storm's End</a></li>
+                <li><a class="House" href="#">Tyrell of Highgarden</a></li>
+                <li><a class="House" href="#">Other/Outsider</a></li>
+             </ul> 
+             </button>
+          </div>
+          <div>
+             <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Status
+              <ul class="dropdown-menu">
+                <li> <a class="Status" href="#">Dead</a></li>
+                <li><a class="Status" href="#">Alive</a></li>
+             </ul> 
+             </button>
+           </div>
+           <div>
+              <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Gender
+               <ul class="dropdown-menu">
+                 <li> <a class="gender" href="#">Male</a></li>
+                 <li><a class="gender" href="#">Female</a></li>
+              </ul> 
+              </button>
+            </div>
+            <div>
+                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Married
+                 <ul class="dropdown-menu">
+                   <li> <a class="married" href="#">yes</a></li>
+                   <li><a class="married" href="#">no</a></li>
+                </ul> 
+                </button>
+              </div>
+              <div>
+                  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Allegiance
+                   <ul class="dropdown-menu">
+                     <li> <a class="Allegiance" href="#">Lannister</a></li>
+                     <li><a class="Allegiance" href="#">Targaryen</a></li>
+                     <li><a class="Allegiance" href="#">Stark</a></li>
+                     <li><a class="Allegiance" href="#">Other</a></li>
+                  </ul> 
+                  </button>
+                </div>
+                <div>
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">titles
+                     <ul class="dropdown-menu">
+                       <li> <a class="title" href="#">King</a></li>
+                       <li><a class="title" href="#">Queen</a></li>
+                       <li><a class="title" href="#">Lord</a></li>
+                       <li><a class="title" href="#">Lady</a></li>
+                       <li><a class="title" href="#">Nights Watch</a></li>
+                       <li><a class="title" href="#">Maester</a></li>
+                       <li><a class="title" href="#">Kings Hand</a></li>
+                       <li> <a class="title" href="#">Protector</a></li>
+                       <li><a class="title" href="#">Prince</a></li>
+                       <li><a class="title" href="#">Princess</a></li>
+                       <li><a class="title" href="#">Warden</a></li>
+                       <li><a class="title" href="#">Knight</a></li>
+                       <li><a class="title" href="#">Kingsgaurd</a></li>
+                       <li><a class="title" href="#">Soldier</a></li>
+                       <li><a class="title" href="#">Small Council</a></li>
+                    </ul> 
+                    </button>
+                  </div>
+        </div>
+          
+       
+      
+        <script
+        src="https://code.jquery.com/jquery-3.4.0.js"
+        integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
+        crossorigin="anonymous"></script>
+        <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="index.js"></script>
+    </body>
+</html> 
