@@ -5,8 +5,8 @@ body {
 }
 #gameboard {
   background:rgba(124, 123, 123, 0.247);
-	width:150vh;
-	height:75vh;
+	width:1000px;
+	height:600px;
 	padding:5px 20px;
 	margin:0px auto;
   box-shadow: inset 0px 0px 20px -6px rgb(99, 157, 194);
@@ -36,7 +36,7 @@ h4{
 }
 
 #gameboard div{
-  width: 140px;
+  width: 150px;
   height: 110px;
   display: flex;
   display: flex;
@@ -64,9 +64,10 @@ h4{
 }
 img {
 vertical-align: middle;
-width: 135px;
-height: 105px;
+width: 145px;
+height: 115px;
 border: 3px solid #7d89a5;
+margin-top:10px;
 }
 embed{
   visibility: hidden;
@@ -84,9 +85,9 @@ h2{
   font-weight: normal;
   font-style: normal;
   font-size:xx-large;
-  margin-top: 40px;
+  margin-top: 20px;
   text-shadow:
-		-1px 2px #e3b03067,
+		-1px 2px #7d89a5,
 		1px 2px 0 #e3b130; 
 }
 .btn-display{
@@ -109,16 +110,31 @@ h2{
   border-color: #e3b130;
   color: black;
 }
-h3{
+#cersei{
   display: flex;
   font-family: 'Cinzel Decorative';
+  justify-content: center;
+  color: black;
+  text-align:center;
+  margin-left: 270px;
+  margin-right:270px;
+  border-radius: 10px;
+  background-color:  #e3b030b4;
+  text-shadow:	-.3px .3px 0 #8a8885a9;
+  padding:10px;
+}
+#instructions{
+  display: flex;
+  font-family: 'Cinzel Decorative';
+  font-weight: 300;
   justify-content: center;
   color: black;
   text-align:center;
   margin-left: 130px;
   margin-right:110px;
   border-radius: 10px;
-  background-color:#e3b03067;
-  padding:10px;
-  text-shadow:	-1px 1px 0 #e3b130;
+  padding:5px;
+  /* background-color:#8a8885a9; */
+  background-color:#8a8885a9;
+  text-shadow:	-.3px .3px 0 #e3b130;
 }

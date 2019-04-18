@@ -8,7 +8,7 @@ let fullArray = [
 {name: 'Cersei Lannister', house: 'House-Lannister', status: 'Alive', gender: 'Female', marriage: 'yes', allegiance: 'Lannister', image: './imgs/cersei.jpg',},
 {name: 'Tyrion Lannister', house: 'House-Lannister', status: 'Alive', gender: 'Male', marriage: 'yes', allegiance: 'Targaryen', image: './imgs/tyrion.JPG',},
 {name: 'Jamie Lannister', house: 'House-Lannister', status: 'Alive', gender: 'Male', marriage: 'no', allegiance: 'Lannister', image:'./imgs/jamie.jpg',}, 
-{name: 'Danaerys Targaryen', house: 'House-Targaryen', status: 'Alive', gender: 'Female', marriage: 'no', allegiance: 'Targaryen', image: './imgs/khaleesi.jpg',},
+{name: 'Daenerys Targaryen', house: 'House-Targaryen', status: 'Alive', gender: 'Female', marriage: 'no', allegiance: 'Targaryen', image: './imgs/khaleesi.jpg',},
 {name: 'Melisandre', house: 'House-None', status: 'Alive', gender: 'Female', marriage: 'no', allegiance:'Other', image: './imgs/melisadnre.jpg',},
 {name: 'Theon Greyjoy', house: 'House-Other', status: 'Alive', gender: 'Male', marriage: 'no', allegiance: 'Stark', image: './imgs/theon.jpg',},
 {name: 'Samwell Tarly', house: 'House-Other', status: 'Alive', gender: 'Male', marriage: 'no', allegiance: 'Stark' , image: './imgs/sam.jpg',},
