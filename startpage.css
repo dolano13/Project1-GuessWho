@@ -1,0 +1,19 @@
+html {
+  background: url("./imgs/backgroundmap.webp") no-repeat;
+  background-size: cover;
+}
+body{
+  background: url("./imgs/backgroundmap.webp") no-repeat;
+  background-size: cover;
+}
+h1{
+  text-align: center; 
+  color:whitesmoke;
+  font-family: 'Game of Thrones';
+  font-weight: normal;
+  font-style: normal;
+  font-size: -webkit-xx-large;
+  text-shadow:
+		-1px 2px rgb(99, 157, 194),
+    1px 2px 0 black; 
+}

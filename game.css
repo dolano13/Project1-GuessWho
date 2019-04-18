@@ -1,3 +1,4 @@
+/* CSS Game */
 body {
   background: url("./imgs/NoqcEgG.jpeg") no-repeat;
   background-size: cover;
@@ -70,4 +71,54 @@ border: 3px solid #7d89a5;
 embed{
   visibility: hidden;
 }
-
+/* CSS Starter Page */
+.start-page{
+    background: url("./imgs/backgroundmap.webp") no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+h2{
+  text-align: center; 
+  color:black;
+  font-family: 'Game of Thrones';
+  font-weight: normal;
+  font-style: normal;
+  font-size:xx-large;
+  margin-top: 40px;
+  text-shadow:
+		-1px 2px #e3b03067,
+		1px 2px 0 #e3b130; 
+}
+.btn-display{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20vh;
+  height: 50vh;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Cinzel Decorative';
+  font-size:15px;
+  color: black;
+}
+.btn-display > div {
+  width: 95vw;
+}
+.navi-btns{
+  background-color: #e3b130;
+  border-color: #e3b130;
+  color: black;
+}
+h3{
+  display: flex;
+  font-family: 'Cinzel Decorative';
+  justify-content: center;
+  color: black;
+  text-align:center;
+  margin-left: 130px;
+  margin-right:110px;
+  border-radius: 10px;
+  background-color:#e3b03067;
+  padding:10px;
+  text-shadow:	-1px 1px 0 #e3b130;
+}

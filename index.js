@@ -1,5 +1,5 @@
 let fullArray = [
-{name:'Jon Snow', House:'House-Stark', status:'Alive', gender:'Male',marriage:'no',allegiance:'Targaryen',image: './imgs/JonSnow.JPG',},
+{name:'Jon Snow', House:'House-Stark', status:'Alive', gender:'Male',marriage:'no',allegiance:'Targaryen',image: './imgs/joooonsnow .jpg',},
 {name:'Arya Stark', house:'House-Stark', status:'Alive', gender:'Female', marriage: 'no', allegiance: 'Stark', image:'./imgs/arya.jpg',},
 {name: 'Sansa Stark', house: 'House-Stark', status: 'Alive', gender: 'Female',marriage: 'yes', allegiance: 'Stark',image:'./imgs/sansa.jpg',},
 {name: 'Robb Stark', house: 'House-Stark', status: 'Dead', gender: 'Male', marriage: 'yes', allegiance: 'Stark', image: './imgs/robb.png',},
@@ -53,30 +53,30 @@ let fullArray = [
 {name: 'Elaria Sand', house: 'House-Other', status: 'Dead', gender: 'Female', marriage: 'no', allegiance: 'Other', image:'imgs/elaria.jpg' ,},
 {name: 'Aemon', house: 'House-Targaryen', status: 'Dead', gender: 'Male', marriage: 'no', allegiance:'Other', image: './imgs/aemon.jpg',},
 {name: 'Brienne of Tarth', house: 'House-Other', status: 'Alive', gender: 'Female', marriage: 'no', allegiance: 'Stark', image: './imgs/brienne.jpg',},
-{name: 'Mance Rayder', house: 'House-None', status: 'Dead', gender: 'Male', marriage: 'no', allegiance:'Other', image: './imgs/mance.jpg',},   
+{name: 'Mance Rayder', house: 'House-None', status: 'Dead', gender: 'Male', marriage: 'no', allegiance:'Other', image: './imgs/ManceRayder.jpg',},   
 {name: 'Ygritte', house: 'House-None', status: 'Dead', gender: 'Female', marriage: 'no', allegiance: 'Other', image: './imgs/ygritte.png',},
 {name: 'Benjen Stark', house: 'House-Stark', status: 'Dead', gender: 'Male', marriage: 'no', allegiance: 'Other', image: './imgs/benjen.jpg',},
 {name: 'Oberyn Martell', house: 'House-Other', status: 'Dead', gender: 'Male', marriage: 'no', allegiance: 'Other', image:'./imgs/oberyn.png',},
 {name: 'Gilly', house: 'House-None', status: 'Alive', gender: 'Female', marriage: 'no', allegiance:'Stark', image: './imgs/gilly.png',},
 ] 
 
-  let characters = [];
-  let theMainCharacter;
+let characters = [];
+let theMainCharacter;
 
-  function getRandom() {
-    for (i = 0; i < 24; i++){
-      let randomNum = Math.floor(Math.random() * ((fullArray.length - 1) + 1))
-      let character = fullArray[randomNum]
-      fullArray.splice(randomNum, 1)
-      characters.push(character)
-      $('#gameboard div').eq(i).html(`<img src="${character.image}" name="${character.name}" />`)
-    }
-   };
-   function guessCharacter() {
-    let randomCharacter = characters[Math.floor(Math.random() * (30))];
-    theMainCharacter = randomCharacter;
-    return randomCharacter
-   };
+function getRandom() {
+  for (i = 0; i < 24; i++){
+    let randomNum = Math.floor(Math.random() * ((fullArray.length - 1) + 1))
+    let character = fullArray[randomNum]
+    fullArray.splice(randomNum, 1)
+    characters.push(character)
+    $('#gameboard div').eq(i).html(`<img src="${character.image}" name="${character.name}" />`)
+  }
+};
+function guessCharacter() {
+  let randomCharacter = characters[Math.floor(Math.random() * (30))];
+  theMainCharacter = randomCharacter;
+  return randomCharacter
+};
 
 var anchors = document.getElementsByTagName("a")
 let names = document.querySelectorAll('#gameboard > div');
@@ -86,19 +86,12 @@ let newArray = []
 function playGame(){
 for (let i = 0; i < anchors.length; i++) {
   anchors[i].addEventListener('click', function(e) {
-    console.log("=========>", e,this)
     let name = this.name;
     let id = this.id
-    console.log("--------- >>> ",theMainCharacter, theMainCharacter[name]);
     newArray.push({[name]:id}) 
   let filteredCharacters = characters.filter(character=>{
     let q= true; 
     for (query of newArray){
-        console.log("the name --------- >> ", name);
-        console.log("the id --------- >>> ", id);
-        console.log("the query --------- >>>> ", query);
-        console.log('the chacacter ====== >> ', character);
-
       if(name === 'house' || name === 'allegiance') {
         if(theMainCharacter[name] !== character[Object.keys(query)] && character[Object.keys(query)] === id && character.name !== theMainCharacter.name) {
           q = false;
@@ -114,88 +107,56 @@ for (let i = 0; i < anchors.length; i++) {
           q = true;
         }
       }
-     
-      
-
-
     }
     if(q){
       console.log(">>>>>>>>>  returning character <<<<<<<<<<< ", character[Object.keys(query)])
       return character
     }
   })
-    console.log("filtered characters array %%%%%%%%%%%%%%% ", filteredCharacters)
     showCharacters(filteredCharacters)
-    // console.log("**********", characters)
 })
 }
 }
 function showCharacters(characters){
-  // console.log(names, characters)
-  names.forEach(name=>{ //Loop thru all the peeps on screen
-    // console.log(name)
-    // console.log(name.firstChild)
+  names.forEach(name=>{ 
     if(name.firstChild){
       let theName = name.firstChild.name;
       let theNameExistsInCharacters = false;  
-      for (character of characters){ //loop through all the filtered characters
+      for (character of characters){ 
         if(character.name === theName){ 
-          theNameExistsInCharacters = true; //found a match 
+          theNameExistsInCharacters = true; 
         }  
       }
-      if(!theNameExistsInCharacters){ //if i never found a match empty out that div
-
+      if(!theNameExistsInCharacters){ 
         name.innerHTML = '';
       }
     }
-
   })
-
 }
 let counter = 3
-$("a[target!='_blank']").click(function clues(){
+$("a[target!='_blank']").click(function (){
   counter -= 1;
   document.getElementById("clicks").innerHTML = counter
   if (counter === 0){
-    
+   $('#gameboard div').click(function(e){
+     if(theMainCharacter.name.includes(e.currentTarget.firstChild.name)){
+       alert('Prepare for your coronation day, the throne is yours.')
+       location.reload()
+     }
+     else{
+       alert('Bend the knee, another has taken the throne from you.')
+       location.reload()
+     }
+   }) 
   }
 })
-// if (this.counter <= 0){
-//   Button = document.getElementsByClassName("btn btn-primary dropdown-toggle");
-//      Button.setEnabled(false);
-// }
-//figure out a way to limit number of clicks --> stop when counter =0
-//  if( counter === 0) {
-//    $("a[target!='_blank']").hide()
-//  }
-//   $(this).toggle(function popUp(){
-//     popupBox = document.getElementsByClassName('pop-up')[0];
-//     ("a[target!='_blank']").onclick = function () {
-//       if (popupBox.style.display === 'block') {
-//       popupBox.style.display = 'none';
-//       } else {
-//        popupBox.style.display = 'block';
-//       }
-//     }
-// })
-// }
-
+// var audio = new Audio('./Game of Thrones - Main Theme (Extended) HD.mp3');
+// audio.play();
 
 
 playGame()
-//call function on the click event
-//global counter  --> pop up -->input box
  //audio variable and use url to put in song
- //modal doesnt do anything until they click ok on the modal or make a second page of the splash page
- //when you lose or win you can put replay and then jsut have the window reload
+
 getRandom();
 guessCharacter();
 console.log(">> the main character <<    ", theMainCharacter)
-//for guessing make a button you click that opens up text box
-// var button = document.createElement("button");
-// button.innerHTML = "Guess";
-// var guess = document.getElementsByTagName(span)[0];
-// body.appendChild(button);
-// button.addEventListener ("click", function() {
-//   alert("did something");
-// });

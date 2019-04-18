@@ -4,161 +4,39 @@
     <head>
       <meta charset="utf-8">
       <title> Start Page </title>
-  
-    <!-- Bootstrap first, then your style.css -->
+
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  
+      <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-  
-      <!-- <link href="./css/info.css" rel="stylesheet"> -->
+
       <link href="./game.css" rel="stylesheet">
-      <link href="./style.css" rel="stylesheet">
   
     </head>
-    <body class="body-img" id="main-page">
+    <body class="start-page">
   
-      <div class="simon-atk-header">
-        <h1> GIF ATTACK <span>Simon Edition</span> </h1>
+      <div class="GOT">
+        <h2 class="first-title"> Guess Who: <br>Game of Thrones Edition </h2>
       </div>
-  
       <div class="btn-display">
-        <a href="./game.html" class="navi-btns btn btn-danger btn-lg"> Start </a>
-        <!-- <a href="./info.html" class="navi-btns btn info-btn btn-lg"> How to Play </a> -->
+        <div class="intro">
+          <h3>"When you play the game of thrones, you win or you die."
+              <br>            - Cersei Lannister <br>
+              Conquer your opponent by knowing the who’s who of Westeros. You could come out on the Iron Throne, or fall and be left to the white walkers. Begin the game and pray to The Seven that you know more than nothing. </h3>
+        </div>
+        <a href="./game.html" class="navi-btns btn btn-danger btn-lg" style="background: #e3b130; outline:#e3b130;font-family:Cinzel Decorative;"> Start </a>
       </div>
-    <!-- JQuery first, then Bootstrap, then your script -->
       <script
       src="https://code.jquery.com/jquery-3.2.1.min.js"
       integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
       crossorigin="anonymous"></script>
   
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  
-      <!-- <script src="./js/info.js"></script> -->
+
       <script src="./index.js"></script>
-      <script src="./js/script.js"></script>
+      <embed src="Game of Thrones - Main Theme (Extended) HD.mp3" autostart="true"> 
   
     </body>
   </html>
-<!-- 
-<!DOCTYPE html>
-<html>
-    <head>
-       <title>Game of Thrones Guess Who? Game</title>
-       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-       <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet">
-       <link rel="stylesheet" href="./style.css">
-    </head>
-    <body>
-        <div>
-          <h1>Guess Who Takes the Throne </h1>
-        </div>
-        <div id="gameboard">
-          <div>character 1</div>
-          <div>character 2</div>
-          <div>character 3</div>
-          <div>character 4</div>
-          <div>character 5</div>
-          <div>character 6</div>
-          <div>character 7</div>
-          <div>character 8</div>
-          <div>character 9</div>
-          <div>character 10</div>
-          <div>character 11</div>
-          <div>character 12</div>
-          <div>character 13</div>
-          <div>character 14</div>
-          <div>character 15</div>
-          <div>character 16</div>
-          <div>character 17</div>
-          <div>character 18</div>
-          <div>character 19</div>
-          <div>character 20</div>
-          <div>character 21</div>
-          <div>character 22</div>
-          <div>character 23</div>
-          <div>character 24</div>
-        </div>
-        <div class="question-buttons">
-          <div>
-             <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">House
-              <ul class="dropdown-menu">
-                <li> <a name="house" id="House-Stark" href="#">Stark of Winterfell</a></li>
-                <li><a name="house" id= "House-Lannister" href="#">Lannister of Casterly Rock</a></li>
-                <li><a name="house" id= "House-Targaryen" href="#">Targaryen of King's Landing</a></li>
-                <!-- <li><a href="#">Greyjoy of Pyke</a></li>
-                <li><a href="#">Tully of Riverrun</a></li>
-                <li><a href="#">Baratheon of Storm's End</a></li>
-                <li><a href="#">Tyrell of Highgarden</a></li> -->
-                <!-- <li><a name="house" id="House-Other" href="#">Other (Greyjoy, Tully, Baratheon, Tyrell, etc.)</a></li>
-                <li><a name="house" id="House-None" href="#">No House</a></li>
-             </ul> 
-             </button>
-          </div>
-          <div>
-             <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Status
-              <ul class="dropdown-menu">
-                <li> <a  name="status" id="Dead" href="#">Dead</a></li>
-                <li><a  name="status" id="Alive" href="#">Alive</a></li>
-             </ul> 
-             </button>
-           </div>
-           <div>
-              <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Gender
-               <ul class="dropdown-menu">
-                 <li> <a name="gender" id="Male" href="#">Male</a></li>
-                 <li><a name="gender" id="Female" href="#">Female</a></li>
-              </ul> 
-              </button>
-            </div>
-            <div>
-                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Married
-                 <ul class="dropdown-menu">
-                   <li> <a name="marriage" id="yes" href="#">yes</a></li>
-                   <li><a name="marriage" id="no" href="#">no</a></li>
-                </ul> 
-                </button>
-              </div>
-              <div>
-                  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Allegiance
-                   <ul class="dropdown-menu">
-                     <li> <a name="allegiance" id="Lannister" href="#">Lannister</a></li>
-                     <li><a name="allegiance" id="Targaryen" href="#">Targaryen</a></li>
-                     <li><a name="allegiance" id="Stark" href="#">Stark</a></li>
-                     <li><a name="allegiance" id="Other" href="#">Other</a></li>
-                  </ul> 
-                  </button>
-                </div> -->
-                <!-- <div>
-                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">titles
-                     <ul class="dropdown-menu">
-                       <li><a name="titles" id="King" href="#">King</a></li>
-                       <li><a name="titles" id="Queen" href="#">Queen</a></li>
-                       <li><a name="titles" id="Lord" href="#">Lord</a></li>
-                       <li><a name="titles" id="Lady" href="#">Lady</a></li>
-                       <li><a name="titles" id="NightsWatch" href="#">Night's Watch</a></li>
-                       <li><a name="titles" id="Maester" href="#">Maester</a></li>
-                       <li><a name="titles" id="Hand" href="#">Hand of the King/Queen</a></li>
-                       <li><a name="titles" id="Prince" href="#">Prince</a></li>
-                       <li><a name="titles" id="Princess" href="#">Princess</a></li>
-                       <li><a name="titles" id="Advisor" href="#">Trusted Advisor</a></li>
-                       <li><a name="titles" id="Knight" href="#">Knight</a></li>
-                       <li><a name="titles" id="Kingsgaurd" href="#">Kingsgaurd</a></li>
-                       <li><a name="titles" id="Queensgaurd" href="#">Queensgaurd</a></li>
-                       <li><a name="titles" id="Soldier" href="#">Soldier</a></li>
-                       <li><a name="titles" id="Council" href="#">Small Council</a></li>
-                    </ul> 
-                    </button>
-                  </div> -->
-        <!-- </div> -->
+
           
-        <embed src="Game of Thrones - Main Theme (Extended) HD.mp3" autostart="true">
       
-        <!-- <script
-        src="https://code.jquery.com/jquery-3.4.0.js"
-        integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
-        crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="index.js"></script>
-    </body>
-</html>  --> 
