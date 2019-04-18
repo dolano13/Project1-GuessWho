@@ -18,7 +18,7 @@ h1{
   font-style: normal;
   text-shadow:
 		-1px 2px 0 #d4af37,
-		1px 2px 0 #d4af37; 
+		1px 2px 0 black; 
 }
 
 #gameboard {
@@ -27,14 +27,18 @@ h1{
   justify-content: space-between;
 }
 #gameboard div{
-  width: 10vw;
-  height: 16vh;
+  width: 120px;
+  height: 100px;
   display: flex;
-  justify-content: space-between;
+  display: flex;
+  justify-content: center;
   align-items: center;
   margin: 5px;
   position: relative;
   box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+  background-image: url(./imgs/GOTtitle.gif);
+  background-size: contain;
+  border: 2px solid #d4af37;
 }
 
 .question-buttons {
@@ -50,7 +54,17 @@ h1{
 .btn{
   background-color: #d4af37;
   border-color: #d4af37;
+  color: black;
 }
+img {
+vertical-align: middle;
+width: 118px;
+height: 98px;
+}
+embed{
+  visibility: hidden;
+}
+
 
 /*html {
   background: url("../img/background.jpg") no-repeat;
@@ -58,68 +72,6 @@ h1{
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
-#memory_board {
-  background:#dddddd;
-	width:800px;
-	height:540px;
-	padding:70px;
-	margin:0px auto;
-  border-radius: 84px;
-  box-shadow: inset 0px 0px 20px -6px rgba(97,89,97,1);
-}
-
-
-.card .back {
-  background-color: #456783;
-	width:71px;
-	height:71px;
-	float:left;
-	margin:10px;
-	padding:20px;
-	font-size:64px;
-}
-.card .front.blocked,
-.card .back.blocked {
-  pointer-events: none;
-}
-
-#score {
-  background-color: rgba(215, 44, 44, 0.8);;
-  border-radius: 8px;
-  font-size: 30px;
-  font-family: Arial;
-  width:200px;
-  padding: 20px;
-  padding-top: 0;
-  margin-left: 75%;
-}
-
-.container {
-  position: relative;
-}
-
-h1 {
-  color: rgba(215, 40, 40, 0.9);
-  font-weight: bolder;
-  font-size: 67px;
-  text-align: center;
-  text-shadow: 0px 0px 20px rgba(150, 150, 150, 1);
-
-}
-
-h2 {
-  color: #456783;
-  font-weight: bolder;
-  font-size: 35px;
-  text-align: center;
-  text-shadow: 1px #ff0000;
-  text-shadow: 1px #ff0000;
-}
-
-p {
-  font-weight: bolder;
-  font-size: 20px;
-  text-align: center;
 }
  body{
   background-image: url("./imgs/GOTtitle.gif");

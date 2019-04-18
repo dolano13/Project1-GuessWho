@@ -1,0 +1,73 @@
+body {
+  background: url("./imgs/NoqcEgG.jpeg") no-repeat;
+  background-size: cover;
+}
+#gameboard {
+  background:rgba(124, 123, 123, 0.247);
+	width:150vh;
+	height:75vh;
+	padding:5px 20px;
+	margin:0px auto;
+  box-shadow: inset 0px 0px 20px -6px rgb(99, 157, 194);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+h1{
+  text-align: center; 
+  color:whitesmoke;
+  font-family: 'Game of Thrones';
+  font-weight: normal;
+  font-style: normal;
+  text-shadow:
+		-1px 2px rgb(99, 157, 194),
+		1px 2px 0 black; 
+}
+h4{
+  font-family: 'Game of Thrones';
+  text-align: center;
+  color:whitesmoke;
+  margin-top: 10px;
+  text-shadow:
+		-.5px .5px 0 rgb(99, 157, 194),
+		.5px .5px 0 black; 
+}
+
+#gameboard div{
+  width: 140px;
+  height: 110px;
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  position: relative;
+}
+
+.question-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 12vw;
+  align-content: center;
+  flex-direction: row;
+  font-family: 'Cinzel Decorative';
+  font-size:12px;
+  padding-left: 35vw;
+  padding-top:10px;
+}
+.btn{
+  background-color: #9498a1;
+  border-color: #9498a1;
+  color: black;
+}
+img {
+vertical-align: middle;
+width: 138px;
+height: 108px;
+border: 3px solid #7d89a5;
+}
+embed{
+  visibility: hidden;
+}
+

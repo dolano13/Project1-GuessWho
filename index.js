@@ -1,34 +1,32 @@
 
 let fullArray = [
 { name:'Jon Snow',
- House:'House-Stark', 
- status:'Alive',
- gender:'Male',
-  titles: ['King', 'Lord', 'Nights Watch',],
+  House:'House-Stark', 
+  status:'Alive',
+  gender:'Male',
   marriage:'no', 
-  allegiance:['Stark', 'Targaryen', 'Other'],
+  allegiance:['Stark','Other'],
   image: './imgs/jonsnow.webp',
 },
 { name:'Arya Stark', 
-house:'House-Stark', 
-status:'Alive', gender:'female',  
-titles:['Faceless-Men','Lady','Peasant'],
-marriage: 'no', allegiance: 'Stark',
-image:'./imgs/aryastark.jpg',
+  house:'House-Stark', 
+  status:'Alive', 
+  gender:'Female',  
+  marriage: 'no', 
+  allegiance: 'Stark',
+  image:'./imgs/aryastark.jpg',
 },
 { name: 'Sansa Stark', 
-house: 'House-Stark', 
-status: 'Alive', 
-gender: 'female',
-titles: ['Lady', 'Handmaiden'],
-marriage: 'yes', allegiance: 'Stark',
-image:'./imgs/sansa.webp',
+  house: 'House-Stark', 
+  status: 'Alive', 
+  gender: 'Female',
+  marriage: 'yes', allegiance: 'Stark',
+  image:'./imgs/sansa.webp',
 },
 { name: 'Robb Stark',
- house: 'House-Stark', 
- status: 'Dead', 
- gender: 'male',
-  titles: ['King','Lord'],
+  house: 'House-Stark', 
+  status: 'Dead', 
+  gender: 'Male',
   marriage: 'yes', allegiance: 'Stark',
   image: './imgs/robbstark.jpg',
 },
@@ -36,8 +34,7 @@ image:'./imgs/sansa.webp',
   name: 'Bran Stark',
   house: 'House-Stark',
   status: 'Alive',
-  gender: 'male',
-  titles: 'Lord',
+  gender: 'Male',
   marriage: 'no',
   allegiance: 'Stark',
   image: './imgs/bran.webp',
@@ -46,8 +43,7 @@ image:'./imgs/sansa.webp',
   name: 'Catelyn Stark',
   house: 'House-Other',
   status: 'Dead',
-  gender: 'female',
-  titles: ['Lady', 'Mother'],
+  gender: 'Female',
   marriage: 'yes',
   allegiance: 'Stark',
   image: './imgs/catstark.jpg'
@@ -56,8 +52,7 @@ image:'./imgs/sansa.webp',
   name: 'Ned Stark',
   house: 'House-Stark',
   status: 'Dead',
-  gender: 'male',
-  titles: ['Lord', 'Hand'],
+  gender: 'Male',
   marriage: 'yes',
   allegiance: 'Stark', 
   image: './imgs/ned stark.jpeg',
@@ -66,8 +61,7 @@ image:'./imgs/sansa.webp',
  name: 'Rickon Stark',
  house: 'House-Stark',
  status: 'Dead',
- gender: 'male',
- titles: 'Lord',
+ gender: 'Male',
  marriage: 'no',
  allegiance: 'Stark',
 image: './imgs/rickon.jpg',
@@ -76,8 +70,7 @@ image: './imgs/rickon.jpg',
   name: 'Cersei Lannister',
   house: 'House-Lannister',
   status: 'Alive',
-  gender: 'female',
-  titles: ['Queen', 'Hand', 'Mother'],
+  gender: 'Female',
   marriage: 'yes',
   allegiance: 'Lannister', //technically baratheon too?
   image: './imgs/cersei.webp',
@@ -86,8 +79,7 @@ image: './imgs/rickon.jpg',
     name: 'Tyrion Lannisterr',
     house: 'House-Lannister',
     status: 'Alive',
-    gender: 'male',
-    titles:  ['Lord', 'Hand', 'advisor'],
+    gender: 'Male',
     marriage: 'yes',
     allegiance: ['Lannister', 'Targaryen'],
     image: './imgs/tyrion.webp',
@@ -96,8 +88,7 @@ image: './imgs/rickon.jpg',
   name: 'Jamie Lannister',
   house: 'House-Lannister',
   status: 'Alive',
-  gender: 'male',
-  titles: ['Hand','Kingsgaurd'],
+  gender: 'Male',
   marriage: 'no',
   allegiance: 'Lannister',
   image:'./imgs/jamie.webp',
@@ -106,8 +97,7 @@ image: './imgs/rickon.jpg',
   name: 'Tywinn Lannister',
   house: 'House-Lannister',
   status: 'Dead',
-  gender: 'male',
-  titles: ['Hand','Lord'],
+  gender: 'Male',
   marriage: 'yes',
   allegiance: 'Lannister',
   image: './imgs/tywinn.jpg',
@@ -116,8 +106,7 @@ image: './imgs/rickon.jpg',
   name: 'Robert Baratheon',
   house: 'House-Other',
   status: 'Dead',
-  gender: 'male',
-  titles: 'King',//he had another title idr
+  gender: 'Male',
   marriage: 'yes',
   allegiance: 'Other',
   image: './imgs/robert.jpg',
@@ -126,8 +115,7 @@ image: './imgs/rickon.jpg',
   name: 'Joffrey Baratheon',
   house: 'House-Other',
   status: 'Dead',
-  gender: 'male',
-  titles: 'King',
+  gender: 'Male',
   marriage: 'yes',
   allegiance: 'Lannister',
   image: './imgs/joffrey.png',
@@ -136,8 +124,7 @@ image: './imgs/rickon.jpg',
   name: 'Tommen Baratheon',
   house: 'House-Other',
   status: 'Dead',
-  gender: 'male',
-  titles: 'King',
+  gender: 'Male',
   marriage: 'yes',
   allegiance: 'Lannister',
   image: './imgs/tommen.jpg',
@@ -146,8 +133,7 @@ image: './imgs/rickon.jpg',
   name: 'Renly Baratheon',
   house: 'House-Other',
   status: 'Dead',
-  gender: 'Lord',
-  titles: 'yes',
+  gender: 'Male',
   marriage: 'yes',
   allegiance: 'Other',
   image: './imgs/renly.jpg',
@@ -156,8 +142,7 @@ image: './imgs/rickon.jpg',
   name: 'Stannis Baratheon',
   house: 'House-Other',
   status: 'Dead',
-  gender: 'male',
-  titles: 'Lord',
+  gender: 'Male',
   marriage: 'yes',
   allegiance: 'Other',
   image: './imgs/stannis.jpg' ,
@@ -166,8 +151,7 @@ image: './imgs/rickon.jpg',
   name: 'Myrcella Baratheon',
   house: 'House-Other',
   status: 'Dead',
-  gender: 'female',
-  title: 'Princess',
+  gender: 'Female',
   marriage:'no',
   allegiance: 'Other',
   image: './imgs/myrcella.png',
@@ -176,8 +160,7 @@ image: './imgs/rickon.jpg',
   name: 'Shireen Baratheon',
   house: 'House-Other',
   status: 'Dead',
-  gender: 'female',
-  title: 'Princess',
+  gender: 'Female',
   marriage:'no',
   allegiance: 'Other',
   image: './imgs/shireen.jpg',
@@ -187,7 +170,6 @@ image: './imgs/rickon.jpg',
   house: 'House-Other',
   status: 'Alive',
   gender: 'Male',
-  titles: ['Knight', 'Kingsgaurd', 'Soldier'],
   marriage: 'no',
   allegiance: 'Other',
   image: './imgs/hound.webp',
@@ -197,7 +179,6 @@ image: './imgs/rickon.jpg',
   house: 'House-Other',
   status: 'Alive',
   gender: 'Male',
-  titles: ['Queensgaurd', 'Kingsgaurd'],
   marriage: 'no',
   allegiance: ['Lannister','Other'],
   image: './imgs/mountain.jpg',
@@ -207,7 +188,6 @@ image: './imgs/rickon.jpg',
   house: 'House-Targaryen',
   status: 'Alive',
   gender: 'Female',
-  titles: ['Queen','Wife'],
   marriage: 'no',
   allegiance: 'Targaryen',
   image: './imgs/khaleesi.webp',
@@ -217,7 +197,6 @@ image: './imgs/rickon.jpg',
   house: 'House-Other',
   status: 'Alive',
   gender: 'Male',
-  titles: ['Queensgaurd','knight','small council', 'slave'],
   marriage: 'yes',
   allegiance: 'Targaryen',
   image: './imgs/jorah.webp',
@@ -227,7 +206,6 @@ image: './imgs/rickon.jpg',
   house: 'House-Other',
   status: 'Dead',
   gender: 'Male',
-  titles: ['Bastard', 'Lord'],
   marriage: 'yes',
   allegiance: 'Other',
   image: './imgs/ramsay.png',
@@ -237,7 +215,6 @@ image: './imgs/rickon.jpg',
   house: 'House-None',
   status: 'Alive',
   gender: 'Female',
-  titles: ['Lady','Small Council'],
   marriage: 'no',
   allegiance: ['Targaryen', 'Stark', 'Other'],
   image: './imgs/redlady.webp',
@@ -247,7 +224,6 @@ image: './imgs/rickon.jpg',
   house: 'House-Other',
   status: 'Alive',
   gender: 'Male',
-  titles: ['Lord', 'Soldier'],
   marriage: 'no',
   allegiance: ['Other', 'Lannister'],
   image: './imgs/euron.webp',
@@ -257,7 +233,6 @@ image: './imgs/rickon.jpg',
   house: 'House-Other',
   status: 'Alive',
   gender: 'Female',
-  titles: ['Queen', 'Lady','Soldier'],
   marriage: 'no',
   allegiance: ['Other', 'Targaryen'],
   image: './imgs/yara.jpg',
@@ -267,7 +242,6 @@ image: './imgs/rickon.jpg',
   house: ['House-Stark','House-Other'],
   status: 'Alive',
   gender: 'Male',
-  titles: ['Lord','Prince', 'Kingsgaurd','Soldier'],
   marriage: 'no',
   allegiance: ['Other', 'Targaryen', 'Stark'],
   image: './imgs/theon.webp',
@@ -277,7 +251,6 @@ image: './imgs/rickon.jpg',
   house: 'House-Targaryen',
   status: 'Dead',
   gender: 'Male',
-  titles: ['Prince', 'Lord', 'King'],
   marriage: 'no',
   allegiance: 'Targaryen',
   image: './imgs/viserys.jpeg',
@@ -287,7 +260,6 @@ image: './imgs/rickon.jpg',
   house: 'House-None',
   status: 'Alive',
   gender: 'Male',
-  titles: ['slave', 'soldier','queensgaurd'],
   marriage: 'no',
   allegiance: ['Targaryen', 'Other'],
   image: './imgs/greyworm.webp',
@@ -297,7 +269,6 @@ image: './imgs/rickon.jpg',
   house: 'House-Targaryen',
   status: 'Dead',
   gender: 'Male',
-  titles: 'King',
   marriage: 'yes',
   allegiance: ['Targaryen'],
   image: './imgs/madking.jpg',
@@ -306,8 +277,7 @@ image: './imgs/rickon.jpg',
   name: 'Lyanna Stark',
   house: 'House-Stark',
   status: 'Dead',
-  gender: 'female',
-  titles: ['Lady', 'Mother'],
+  gender: 'Female',
   marriage: 'yes',
   allegiance: ['Stark', 'Targaryen'],
   image: './imgs/lyanna.png',
@@ -317,7 +287,6 @@ image: './imgs/rickon.jpg',
   house: 'House-Stark',
   status: 'Dead',
   gender: 'Male',
-  titles: ['Ranger', 'Lord', 'Nights Watch'],
   marriage: 'no',
   allegiance: ['Stark', 'Other'],
   image: './imgs/unclebenjen.png',
@@ -327,7 +296,6 @@ image: './imgs/rickon.jpg',
   house: 'House-Targaryen',
   status: 'Dead',
   gender: 'Male',
-  titles: ['Maester', 'Prince', 'Nights Watch'],
   marriage: 'no',
   allegiance: ['Targaryen', 'Other'],
   image: './imgs/aemon.jpg',
@@ -337,7 +305,6 @@ image: './imgs/rickon.jpg',
   house: 'House-Other',
   status: 'Alive',
   gender: 'Male',
-  titles: ['Maester', 'Lord', 'Nights Watch', 'Steward'],
   marriage: 'no',
   allegiance: ['Stark', 'Other'],
   image: './imgs/sam.webp',
@@ -347,7 +314,6 @@ image: './imgs/rickon.jpg',
   house: 'House-None',
   status: 'Alive',
   gender: 'Female',
-  titles: ['slave', 'small council','handmaiden'],
   marriage: 'no',
   allegiance: ['Targaryen', 'Other'],
   image: './imgs/missandei.webp',
@@ -357,7 +323,6 @@ image: './imgs/rickon.jpg',
   house: 'House-Other',
   status: 'Alive',
   gender: 'Male',
-  titles: ['small council', 'lord'],
   marriage: 'no',
   allegiance: ['Targaryen', 'Lannister', 'Other'],
   image: './imgs/varys.webp',
@@ -367,7 +332,6 @@ image: './imgs/rickon.jpg',
   house: 'House-None',
   status: 'Dead',
   gender: 'Male',
-  titles: ['king', 'soldier'],
   marriage: 'no',
   allegiance: 'Other',
   image: './imgs/nightking.webp',
@@ -376,8 +340,7 @@ image: './imgs/rickon.jpg',
   name: 'Brienne of Tarth',
   house: 'House-Other',
   status: 'Alive',
-  gender: 'female',
-  titles: ['Lady', 'Kingsgaurd', 'Protector'],
+  gender: 'Female',
   marriage: 'no',
   allegiance: ['Stark', 'Other'],
   image: './imgs/brienne.webp',
@@ -386,8 +349,7 @@ image: './imgs/rickon.jpg',
   name: 'Davos Seaworth',
   house: 'House-Other',
   status: 'Alive',
-  gender: 'male',
-  titles: ['Knight', 'Kingsgaurd', 'small council'],
+  gender: 'Male',
   marriage: 'no',
   allegiance: ['Stark', 'Other'],
   image: './imgs/davos.webp',
@@ -396,8 +358,7 @@ image: './imgs/rickon.jpg',
   name: 'Tormund Giantsbane',
   house: 'House-None',
   status: 'Alive',
-  gender: 'male',
-  titles: ['soldier','wildling'],
+  gender: 'Male',
   marriage: 'no',
   allegiance: ['Stark', 'Other'],
   image: './imgs/tormund.png',
@@ -406,8 +367,7 @@ image: './imgs/rickon.jpg',
   name: 'Mance Rayder',
   house: 'House-None',
   status: 'Dead',
-  gender: 'male',
-  titles: ['King','Nights Watch'],
+  gender: 'Male',
   marriage: 'no',
   allegiance:  'Other',
   image: './imgs/mance.jpg',
@@ -416,141 +376,127 @@ image: './imgs/rickon.jpg',
   name: 'Ygritte',
   house: 'House-None',
   status: 'Dead',
-  gender: 'female',
-  titles: ['soldier','wildling'],
+  gender: 'Female',
   marriage: 'no',
   allegiance:  'Other',
   image: './imgs/Ygritte.jpg',
     },
-//   {name: 'Ser Bronn',
-//   house: 'House-None',
-//   status: 'Alive',
-//   gender: 'male',
-//   titles: ['Knight', 'Soldier', 'Commander'],
-//   marriage: 'yes',
-//   allegiance: 'Lannister', 
-//   //image: ,
-//   },
-//   {name: 'Khal Drogo', 
-//   house: 'House-None',
-//   status: 'Dead',
-//   gender:'male',
-//   titles:['soldier', 'leader'],
-//   marriage: 'yes',
-//   allegiance: 'Other'
-//   // image: ,
-//   },
-//   {name: 'Loras Tyrell',
-//   house: 'House-Other',
-//   status: 'Dead',
-//   gender: 'male',
-//   titles: ['knight', 'Kingsgaurd'],
-//   marriage: 'no',
-//   allegiance: 'other',
-//   // image: ,
-//   },
-//   {name: 'Margaery Tyrell',
-//   house: 'House-Other',
-//   status: 'Dead',
-//   gender: 'female',
-//   titles: ['Lady','Queen'],
-//   marriage: 'yes',
-//   allegiance: ['Lannister','Other']
-//   // image: ,
-// },
-// {name: 'Olenna Tyrell',
-// house: 'House-Other',
-// status: 'Dead',
-// gender: 'female',
-// titles: 'Queen',
-// marriage: 'yes',
-// allegiance: 'Targaryen',
-// //image: ,
-// },
-// {name: 'Petyr Baelish',
-// house: 'House-Other',
-// status: 'Dead',
-// gender: 'male',
-// titles: ['Lord','advisor', 'small council'],
-// marriage: 'yes',
-// allegiance: ['Stark','Other'],
-// //image: ,
-// },
-// {name: 'Walder Frey',
-// house: 'House-Other',
-// status: 'Dead',
-// gender: 'male',
-// titles: 'Lord',
-// marriage: 'yes',
-// allegiance: ['Stark','Lannister'],
-// //image: ,
-// },
-// {name: 'Lyanna Mormont',
-// house: 'House-Other',
-// status: 'Alive',
-// gender: 'female',
-// titles: 'Lady',
-// marriage: 'no',
-// allegiance: 'Stark',
-// //image: ,
-// },
-// {name: 'Gendry',
-// house: 'House-None',
-// status: 'Alive',
-// gender: 'male',
-// titles: ['Lord','soldier'],
-// marriage: 'no',
-// allegiance: 'Stark',
-// //image: ,
-// },
-// {name: 'Podrick Payne',
-// house: 'House-None',
-// status: 'Alive',
-// gender: 'male',
-// titles: 'soldier',
-// marriage: 'no',
-// allegiance: ['Stark', 'Lannister'],
-// //image: ,
-// },
-// {name: 'Oberyn Martell',
-// house: 'House-Other',
-// status: 'Dead',
-// gender: 'male',
-// titles: ['soldier', 'Prince'],
-// marriage: 'no',
-// allegiance: 'Other',
-// //image: ,
-// },
-// {name: 'Qyburn',
-// house: 'House-None',
-// status: 'Alive',
-// gender: 'male',
-// titles: 'Hand',
-// marriage: 'no',
-// allegiance: 'Lannister',
-// //image: ,
-// },
-// {name: 'Hodor',
-// house: 'House-None',
-// status: 'Dead',
-// gender: 'male',
-// titles: 'protector',
-// marriage: 'no',
-// allegiance: ['Stark', 'Other']
-// //image: ,
-// },
-// {name: 'Beric Dondarrion',
-// house: 'House-Other',
-// status: 'Alive',
-// gender: 'male',
-// titles: ['soldier', 'knight', 'lord'],
-// marriage: 'no',
-// allegiance: 'Stark',
-// //image:
-// }
+  {name: 'Ser Bronn',
+  house: 'House-None',
+  status: 'Alive',
+  gender: 'Male',
+  marriage: 'yes',
+  allegiance: 'Lannister', 
+  //image: ,
+},
+  {name: 'Khal Drogo', 
+  house: 'House-None',
+  status: 'Dead',
+  gender:'Male',
+  marriage: 'yes',
+  allegiance: 'Other'
+  // image: ,
+},
+  {name: 'Loras Tyrell',
+  house: 'House-Other',
+  status: 'Dead',
+  gender: 'Male',
+  marriage: 'no',
+  allegiance: 'other',
+  // image: ,
+},
+  {name: 'Margaery Tyrell',
+  house: 'House-Other',
+  status: 'Dead',
+  gender: 'Female',
+  marriage: 'yes',
+  allegiance: ['Lannister','Other']
+  // image: ,
+ },
+{name: 'Olenna Tyrell',
+house: 'House-Other',
+status: 'Dead',
+gender: 'Female',
+marriage: 'yes',
+allegiance: 'Targaryen',
+//image: ,
+},
+{name: 'Petyr Baelish',
+house: 'House-Other',
+status: 'Dead',
+gender: 'Male',
+marriage: 'yes',
+allegiance: ['Stark','Other'],
+//image: ,
+},
+{name: 'Walder Frey',
+house: 'House-Other',
+status: 'Dead',
+gender: 'Male',
+marriage: 'yes',
+allegiance: ['Stark','Lannister'],
+//image: ,
+},
+{name: 'Lyanna Mormont',
+house: 'House-Other',
+status: 'Alive',
+gender: 'Female',
+marriage: 'no',
+allegiance: 'Stark',
+//image: ,
+},
+{name: 'Gendry',
+house: 'House-None',
+status: 'Alive',
+gender: 'Male',
+marriage: 'no',
+allegiance: 'Stark',
+//image: ,
+},
+{name: 'Podrick Payne',
+house: 'House-None',
+status: 'Alive',
+gender: 'Male',
+marriage: 'no',
+allegiance: ['Stark', 'Lannister'],
+//image: ,
+},
+{name: 'Oberyn Martell',
+house: 'House-Other',
+status: 'Dead',
+gender: 'Male',
+marriage: 'no',
+allegiance: 'Other',
+//image: ,
+},
+{name: 'Qyburn',
+house: 'House-None',
+status: 'Alive',
+gender: 'Male',
+marriage: 'no',
+allegiance: 'Lannister',
+//image: ,
+},
+{name: 'Hodor',
+house: 'House-None',
+status: 'Dead',
+gender: 'Male',
+marriage: 'no',
+allegiance: ['Stark', 'Other']
+//image: ,
+},
+{name: 'Beric Dondarrion',
+house: 'House-Other',
+status: 'Alive',
+gender: 'Male',
+marriage: 'no',
+allegiance: 'Stark',
+//image:
+}
 ] 
 
   let characters = [];
+  let theMainCharacter;
 
   function getRandom() {
     for (i = 0; i < 24; i++){
@@ -558,76 +504,72 @@ image: './imgs/rickon.jpg',
       let character = fullArray[randomNum]
       fullArray.splice(randomNum, 1)
       characters.push(character)
-     // console.log(character)
-      //$('#gameboard div').eq(i).html(character.name)
-      $('#gameboard div').eq(i).html(`<img src="${character.image}" name="${character.name}" width="50px" />`)
+      $('#gameboard div').eq(i).html(`<img src="${character.image}" name="${character.name}" />`)
     }
-   }
-        // $('#gameboard div').eq(i).html(character.name)
-      //`<img src=${character.image} width="50px">`
+   };
+   function guessCharacter() {
+    let randomCharacter = characters[Math.floor(Math.random() * (30))];
+    theMainCharacter = randomCharacter;
+    return randomCharacter
+   };
 
-//do this for every var
 var anchors = document.getElementsByTagName("a")
 let names = document.querySelectorAll('#gameboard > div');
 
-// let newArray = []
-//console.log(names)
-// function playGame(){
-// for (let i = 0; i < anchors.length; i++) {
-//   anchors[i].addEventListener('click', function(e) {
-//     for (character in characters){
-//       if (e.path[0].id !== characters[character].status) {
-//         names.forEach(elem => {
-//           if (elem.innerText.includes(characters[character].name)) {
-//             elem.innerText = ''
-//           }
-//          })
-//        }
-//     //   // console.log(characters[character].House)
-//      }
-    
-//    // console.log(e)
-//   })
-// }
-//};
-
-
 let newArray = []
-
 
 function playGame(){
 for (let i = 0; i < anchors.length; i++) {
   anchors[i].addEventListener('click', function(e) {
-    console.log(e,this)
-  let name = this.name;
-  let id = this.id
-  newArray.push({[name]:id})
+    console.log("=========>", e,this)
+    let name = this.name;
+    let id = this.id
+    console.log("--------- >>> ",theMainCharacter, theMainCharacter[name]);
+    newArray.push({[name]:id}) 
   let filteredCharacters = characters.filter(character=>{
-    //onsole.log(character)
     let q= true; 
     for (query of newArray){
-      //console.log(Object.keys(query))
-      if(character[Object.keys(query)] !== query[Object.keys(query)]){
-        q = false
+        console.log("the name --------- >> ", name);
+        console.log("the id --------- >>> ", id);
+        console.log("the query --------- >>>> ", query);
+        console.log('the chacacter ====== >> ', character);
+
+      if(name === 'house' || name === 'allegiance') {
+        if(theMainCharacter[name] !== character[Object.keys(query)] && character[Object.keys(query)] === id && character.name !== theMainCharacter.name) {
+          q = false;
+        } else if(theMainCharacter[name] === character[Object.keys(query)] && character[Object.keys(query)] !== id && character.name !== theMainCharacter.name) {
+          q = false;
+        } else {
+          q =true;
+        }
+      } else {
+        if(theMainCharacter[name] !== character[Object.keys(query)] && character.name !== theMainCharacter.name){
+          q = false
+        } else {
+          q = true;
+        }
       }
+     
+      
+
+
     }
     if(q){
+      console.log(">>>>>>>>>  returning character <<<<<<<<<<< ", character[Object.keys(query)])
       return character
     }
   })
-    console.log(filteredCharacters)
+    console.log("filtered characters array %%%%%%%%%%%%%%% ", filteredCharacters)
     showCharacters(filteredCharacters)
+    // console.log("**********", characters)
 })
 }
 }
-
-
-
 function showCharacters(characters){
-  console.log(names, characters)
+  // console.log(names, characters)
   names.forEach(name=>{ //Loop thru all the peeps on screen
-    console.log(name)
-    console.log(name.firstChild)
+    // console.log(name)
+    // console.log(name.firstChild)
     if(name.firstChild){
       let theName = name.firstChild.name;
       let theNameExistsInCharacters = false;  
@@ -645,42 +587,27 @@ function showCharacters(characters){
   })
 
 }
+let counter = 3
+$("a[target!='_blank']").click(function clues(){
+  counter -= 1;
+  document.getElementById("clicks").innerHTML = counter
+})
+if( counter === 0){
+  $("a[target!='_blank']").click(function(){
+    $(this).toggle()
+  })
+  }
+
 
 playGame()
 //call function on the click event
-
-    // console.log(e,this)
-    // let name = this.name;
-    // let id = this.id
-    // newArray.push({[name]:id})
-    // let filteredCharacters = characters.filter(character=>{
-    //   console.log(character)
-    //   let q= true; 
-    //   for (query of newArray){
-    //     console.log(Object.keys(query))
-    //     if(character[Object.keys(query)] !== query[Object.keys(query)]){
-    //       q = false
-    //     }
-    //   }
-    //   if(q){
-    //     return character
-    //   }
-    // })
-    //   console.log(filteredCharacters)
-
-    // filteredCharacters.forEach(eachCharacter=>{
-
-    
-
-  
-    // console.log(anchors[i])
-
- 
 //global counter  --> pop up -->input box
- 
-// } 
+ //audio variable and use url to put in song
+ //modal doesnt do anything until they click ok on the modal or make a second page of the splash page
+ //when you lose or win you can put replay and then jsut have the window reload
 getRandom();
-
+guessCharacter();
+console.log(">> the main character <<    ", theMainCharacter)
 //for guessing make a button you click that opens up text box
 // var button = document.createElement("button");
 // button.innerHTML = "Guess";
