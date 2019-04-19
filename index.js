@@ -91,13 +91,19 @@ for (let i = 0; i < anchors.length; i++) {
     newArray.push({[name]:id}) 
   let filteredCharacters = characters.filter(character=>{
     let q= true; 
+    // console.log("this is before the for in loop")
     for (query of newArray){
+      // console.log("what is the name of the query  ", name);
       if(name === 'house' || name === 'allegiance') {
+        // console.log("Checking house and/or allegiance")
         if(theMainCharacter[name] !== character[Object.keys(query)] && character[Object.keys(query)] === id && character.name !== theMainCharacter.name) {
+          console.log("did not match the main character")
           q = false;
-        } else if(theMainCharacter[name] === character[Object.keys(query)] && character[Object.keys(query)] !== id && character.name !== theMainCharacter.name) {
+        } else if(theMainCharacter[name] !== character[Object.keys(query)] && character[Object.keys(query)] !== id && character.name !== theMainCharacter.name) {//this is where the problem lies
+          console.log("matched the main character")
           q = false;
         } else {
+          console.log('the else condition for whether it is part of house or allegiance')
           q =true;
         }
       } else {
@@ -109,7 +115,7 @@ for (let i = 0; i < anchors.length; i++) {
       }
     }
     if(q){
-      console.log(">>>>>>>>>  returning character <<<<<<<<<<< ", character[Object.keys(query)])
+      // console.log(">>>>>>>>>  returning character <<<<<<<<<<< ", character[Object.keys(query)])
       return character
     }
   })
@@ -155,8 +161,6 @@ $("a[target!='_blank']").click(function (){
 
 
 playGame()
- //audio variable and use url to put in song
-
 getRandom();
 guessCharacter();
 console.log(">> the main character <<    ", theMainCharacter)

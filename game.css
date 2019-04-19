@@ -5,8 +5,8 @@ body {
 }
 #gameboard {
   background:rgba(124, 123, 123, 0.247);
-	width:1000px;
-	height:600px;
+	width:900px;
+	height:550px;
 	padding:5px 20px;
 	margin:0px auto;
   box-shadow: inset 0px 0px 20px -6px rgb(99, 157, 194);
@@ -36,9 +36,8 @@ h4{
 }
 
 #gameboard div{
-  width: 150px;
+  width: 120px;
   height: 110px;
-  display: flex;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,8 +63,8 @@ h4{
 }
 img {
 vertical-align: middle;
-width: 145px;
-height: 115px;
+width: 115px;
+height: 105px;
 border: 3px solid #7d89a5;
 margin-top:10px;
 }
@@ -93,7 +92,7 @@ h2{
 .btn-display{
   display: flex;
   justify-content: space-between;
-  margin-top: 20vh;
+  margin-top: 5vh;
   height: 50vh;
   align-content: center;
   flex-direction: column;
