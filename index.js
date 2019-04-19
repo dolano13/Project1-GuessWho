@@ -99,7 +99,8 @@ for (let i = 0; i < anchors.length; i++) {
         if(theMainCharacter[name] !== character[Object.keys(query)] && character[Object.keys(query)] === id && character.name !== theMainCharacter.name) {
           console.log("did not match the main character")
           q = false;
-        } else if(theMainCharacter[name] !== character[Object.keys(query)] && character[Object.keys(query)] !== id && character.name !== theMainCharacter.name) {//this is where the problem lies
+        }  else if(theMainCharacter[name] === character[Object.keys(query)] && character[Object.keys(query)] !== id && character.name !== theMainCharacter.name) {
+        // else if(theMainCharacter[name] !== character[Object.keys(query)] && character[Object.keys(query)] !== id && character.name !== theMainCharacter.name) {
           console.log("matched the main character")
           q = false;
         } else {
