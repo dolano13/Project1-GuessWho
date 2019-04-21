@@ -97,7 +97,7 @@ for (let i = 0; i < anchors.length; i++) {
       // query { house:House-Stark } 
       console.log("what is the name of the query  ", character );
 
-        if(name === 'house' || name === 'allegiance' && character[name] != theMainCharacter[name]) {
+        if(name === 'house' && character[name] != theMainCharacter[name]) {
           return character[name] != query[name]
         }
         return character[name] == theMainCharacter[name]  
